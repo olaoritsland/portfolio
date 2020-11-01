@@ -13,7 +13,7 @@
 #' @export
 #' @import tidyquant
 #' @improt dplyr
-#' @import tidyr pivot_longer
+#' @importFrom tidyr pivot_longer
 #' @import ggplot2
 #' @importFrom ggthemes scale_color_ptol
 #' 

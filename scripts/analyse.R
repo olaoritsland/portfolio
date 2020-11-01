@@ -43,8 +43,3 @@ plot_rolling_stat(stocks, "NFLX")
 plot_stock_volatility(stocks, ticker = "FB", return_var = returns_simple)
 plot_stock_volatility(stocks, return_var = returns_simple, all_tickers = TRUE)
 
-
-
-
-
-
