@@ -1,11 +1,12 @@
 #' Plot returns distribution
 #' 
 #' This function plots the distribution of all symbols in data.
+#' 
+#' TODO: add theoretical normal distribution
 #'
 #' @param .data 
-#' @param ticker
+#' @param ticker if missing, all tickers are plotted
 #' @param return_var 
-#' @param all_tickers boolean
 #'
 #' @return
 #' @export
@@ -14,9 +15,9 @@
 #'
 #' @examples
 #' 
-plot_returns_distribution <- function(.data, ticker, return_var, all_tickers = FALSE) {
+plot_returns_distribution <- function(.data, ticker, return_var) {
   
-  if (all_tickers) {
+  if (missing(ticker)) {
     
     .data %>% 
       ggplot(aes({{return_var}})) + 

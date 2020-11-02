@@ -13,9 +13,9 @@
 #' @import dplyr
 #'
 #' @examples
-plot_stock_volatility <- function(.data, ticker, return_var, all_tickers = FALSE) {
+plot_stock_volatility <- function(.data, ticker, return_var) {
   
-  if (all_tickers) {
+  if (missing(ticker)) {
     
     .data %>% 
       ggplot(aes(date, {{return_var}})) +
