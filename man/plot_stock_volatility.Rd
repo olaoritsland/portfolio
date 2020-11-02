@@ -11,7 +11,7 @@ plot_stock_volatility(.data, ticker, return_var, all_tickers = FALSE)
 
 \item{ticker}{}
 
-\item{all_tickers}{boolean}
+\item{all_tickers}{boolean TODO remove param and change to !missing(ticker)}
 }
 \value{
 

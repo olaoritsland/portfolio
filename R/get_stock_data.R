@@ -19,11 +19,11 @@ get_stock_data <- function(tickers){
   
   tickers %>% 
     tidyquant::tq_get() %>% 
-    select(symbol, date, close) %>%
+    select(symbol, date, adjusted) %>%
     group_by(symbol) %>% 
     arrange(date) %>% 
-    mutate(returns_simple = close - lag(close),
-           returns_log = log(close) - log(lag(close))) %>% 
+    mutate(returns_simple = adjusted - lag(adjusted),
+           returns_log = log(adjusted) - log(lag(adjusted))) %>% 
     ungroup()
   
 }

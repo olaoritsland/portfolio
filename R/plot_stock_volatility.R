@@ -5,7 +5,7 @@
 #' @param .data 
 #' @param ticker 
 #' @param return_var
-#' @param all_tickers boolean
+#' @param all_tickers boolean TODO remove param and change to !missing(ticker)
 #'
 #' @return
 #' @export

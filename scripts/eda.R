@@ -40,6 +40,7 @@ plot_rolling_stat(stocks, "NFLX")
 
 
 # plot volatility
-plot_stock_volatility(stocks, ticker = "FB", return_var = returns_simple)
 plot_stock_volatility(stocks, return_var = returns_simple, all_tickers = TRUE)
 
+# plot volatility of single stock
+plot_stock_volatility(stocks, ticker = "FB", return_var = returns_simple)
