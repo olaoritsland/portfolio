@@ -11,11 +11,8 @@
 #' @import dplyr
 #'
 #' @examples
-#' \dontrun {
-#' get_stock_data("APPL")
-#' }
 #' 
-get_stock_data <- function(tickers){
+get_stock_data <- function(tickers) {
   
   tickers %>% 
     tidyquant::tq_get() %>% 

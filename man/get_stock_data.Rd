@@ -16,8 +16,5 @@ get_stock_data(tickers)
 This function collects market data for the specified tickers and computes both simple and logarithmic returns.
 }
 \examples{
-\dontrun {
-get_stock_data("APPL")
-}
 
 }
