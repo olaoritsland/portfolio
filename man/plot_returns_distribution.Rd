@@ -4,20 +4,23 @@
 \alias{plot_returns_distribution}
 \title{Plot returns distribution}
 \usage{
-plot_returns_distribution(.data, ticker, return_var, all_tickers = FALSE)
+plot_returns_distribution(.data, ticker, return_var)
 }
 \arguments{
 \item{.data}{}
 
-\item{return_var}{}
+\item{ticker}{if missing, all tickers are plotted}
 
-\item{all_tickers}{boolean}
+\item{return_var}{}
 }
 \value{
 
 }
 \description{
 This function plots the distribution of all symbols in data.
+}
+\details{
+TODO: add theoretical normal distribution
 }
 \examples{
 

@@ -4,7 +4,7 @@
 \alias{plot_stock_volatility}
 \title{Plot stock volatility}
 \usage{
-plot_stock_volatility(.data, ticker, return_var, all_tickers = FALSE)
+plot_stock_volatility(.data, ticker, return_var)
 }
 \arguments{
 \item{.data}{}

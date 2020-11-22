@@ -9,7 +9,9 @@ tickers <- c("FB",
              "AMZN",
              "AAPL",
              "NFLX",
-             "GOOGL")
+             "GOOGL",
+             "EQNR",
+             "ZM")
 
 
 # get stock data
@@ -38,4 +40,4 @@ plot_rolling_stat(stocks, "NFLX")
 plot_stock_volatility(stocks, return_var = returns_simple)
 
 # plot volatility of single stock
-plot_stock_volatility(stocks, ticker = "FB", return_var = returns_simple)
+plot_stock_volatility(stocks, ticker = "ZM", return_var = returns_simple)
