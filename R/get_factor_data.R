@@ -18,7 +18,7 @@ get_factor_data <- function() {
   
   factors <- 
     readr::read_csv(unz(temp, csv_file), skip = 6) %>% 
-    rename(date = X1, mkt = `Mkt-RF`) %>%
+    rename(date = ...1, mkt = `Mkt-RF`) %>%
     rename_at(c("SMB", "HML", "RMW", "CMA", "RF"), .funs = tolower) %>% 
     mutate(date = lubridate::ymd(date)) %>%
     mutate_if(is.numeric, funs(. / 100)) 
